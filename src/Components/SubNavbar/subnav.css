@@ -1,0 +1,28 @@
+.subnav{
+    height: 3.5rem;
+    background-color: blanchedalmond;
+}
+.subnav-nav{
+    max-width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item{
+    width: 6rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-item-button{
+    background-color: aquamarine;
+    padding-block: 12%;
+    border-radius: 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

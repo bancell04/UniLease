@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: 'Heebo', sans-serif;
+    background-color: #f6f6f6;
+}
+ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+}
+li, a{
+    cursor: pointer;
+    list-style: none;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+}
+li, a{
+    cursor: pointer;
+    list-style: none;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+}
