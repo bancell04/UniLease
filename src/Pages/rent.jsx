@@ -25,7 +25,7 @@ export const ListingsPage = () => {
             </SubNavItem>
             <SubNavItem text='Distance'/>
           </SubNavbar>
-          <div className='results-text'>Found {tempListings.length} spaces for rent near Mines!</div>
+          
           <ListingsGrid entries={tempListings}/>
           <div className="map">
               
