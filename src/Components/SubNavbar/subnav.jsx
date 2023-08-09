@@ -24,11 +24,20 @@ export const SubNavItem = (props) => {
     )
 }
 
-export const DropdownMenu = (props) => {
+export const DropdownMenu = () => {
+
+    const DropdownItem = (props) => {
+        return (
+            <a href='#' className='menu-item'>
+                {props.children}
+            </a>
+        )
+    }
+
 
     return (
         <div className='dropdown'>
-            
+            <DropdownItem>My Profile</DropdownItem>
         </div>
     )
 }

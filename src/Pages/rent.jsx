@@ -17,11 +17,13 @@ export const ListingsPage = () => {
       <main className="rent-page-container">
           <SubNavbar>
             <SubNavItem text='Filter' />
+            <SubNavItem text='Type' />
             <SubNavItem text='Rent'>
               <DropdownMenu>
-                
+                <p>sup</p>
               </DropdownMenu>
             </SubNavItem>
+            <SubNavItem text='Distance'/>
           </SubNavbar>
           <div className='results-text'>Found {tempListings.length} spaces for rent near Mines!</div>
           <ListingsGrid entries={tempListings}/>

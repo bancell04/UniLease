@@ -1,6 +1,6 @@
 .subnav{
+    margin-top: 0.5rem;
     height: 3.5rem;
-    background-color: blanchedalmond;
 }
 .subnav-nav{
     max-width: 100%;
@@ -11,18 +11,24 @@
 }
 
 .nav-item{
-    width: 6rem;
+    width: 6.2rem;
+    margin-inline: 0.2rem;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .nav-item-button{
-    background-color: aquamarine;
-    padding-block: 12%;
+    background-color: rgba(201, 205, 213, 0.352);
+    padding-block: 11%;
     border-radius: 2rem;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.dropdown{
+    position: absolute;
+    top: 58px;
 }
