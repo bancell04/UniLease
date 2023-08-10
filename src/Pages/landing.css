@@ -1,0 +1,29 @@
+.landing{
+    background-color: rgb(242, 242, 242);
+    height: calc(100vh - 3.5rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.landing-directory{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 30rem;
+    width: 30rem;
+    border-radius: 50vh;
+    background-color: rgba(255, 255, 255, 0.571);
+    position: absolute;
+    top: 20vh;
+}
+.directory-button{
+    background-color: rgba(213, 223, 223, 0.404);
+    width: 22%;
+    padding: 4%;
+    margin-block: 2%;
+    margin-inline: 1rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}

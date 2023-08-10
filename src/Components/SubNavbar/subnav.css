@@ -1,5 +1,6 @@
 .subnav{
-    margin-top: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
     height: 3.5rem;
 }
 .subnav-nav{
@@ -11,7 +12,7 @@
 }
 
 .nav-item{
-    width: 6.2rem;
+    width: 5.5rem;
     margin-inline: 0.2rem;
     height: 100%;
     display: flex;
@@ -22,6 +23,7 @@
     background-color: rgba(201, 205, 213, 0.352);
     padding-block: 11%;
     border-radius: 2rem;
+    font-size: 0.9rem;
     text-align: center;
     display: flex;
     align-items: center;
@@ -29,6 +31,25 @@
 }
 
 .dropdown{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: absolute;
-    top: 58px;
+    background-color: white;
+    top: 140px;
+    width: 15rem;
+    border-radius: 0.2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-inline: 1rem;
+    padding-block: 1rem;
+    transform: translateX(35.5%);
+    z-index: 1;
+
+}
+.menu-item{
+    display: flex;
+    font-size: 1.1rem;
+}
+.menu-item p{
+    margin: 0;
 }

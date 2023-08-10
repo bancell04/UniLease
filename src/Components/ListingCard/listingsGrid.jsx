@@ -11,7 +11,7 @@ export const ListingsGrid = (props) => {
             {entries.map((entry) => {
                 return(
                     <Card 
-                        id={entry.id} 
+                        key={entry.id} 
                         school={entry.school}
                         numBedrooms={entry.numBedrooms} 
                         numBathrooms={entry.numBathrooms}
