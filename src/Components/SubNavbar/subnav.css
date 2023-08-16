@@ -53,3 +53,19 @@
 .menu-item p{
     margin: 0;
 }
+
+.min-max{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    background-color: white;
+    top: 140px;
+    width: 15rem;
+    border-radius: 0.2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-inline: 1rem;
+    padding-block: 1rem;
+    transform: translateX(35.5%);
+    z-index: 1;
+}

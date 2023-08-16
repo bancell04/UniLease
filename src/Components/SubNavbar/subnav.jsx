@@ -1,4 +1,5 @@
 import { ApiContext, DropdownContext } from '../../context';
+import { FilterProvider } from '../../UseContexts/FilterContext';
 import './subnav.css';
 import React, { useContext, useState, useEffect} from 'react';
 import { useForm } from 'react-hook-form'
@@ -39,18 +40,14 @@ export const SubNavItem = (props) => {
 
 export const DropdownMenu = () => {
 
-    const [filters, setFilters] = useContext(ApiContext)
-
     const { register, handleSubmit, reset } = useForm();
 
     useEffect(() => {
-        let defaultValues = filters.tag
-        reset({...defaultValues})
+        
     }, []);
 
     function onSubmit(data){
         console.log(data)
-        setFilters({...filters, tag:data})
     }
 
     const DropdownItem = () => {
@@ -81,9 +78,28 @@ export const DropdownMenu = () => {
     
 }
 
-export const MinMaxForm = () => {
+export const MinMaxForm = ({ setValues, submit, getValues }) => {
+
+    const { register, handleSubmit, reset } = useForm()
+
+    useEffect(() => {
+        let defaultValues = {}
+        defaultValues.min = localMin
+        defaultValues.max = localMax
+        reset({...defaultValues})
+    }, []);
+
+    function onSubmit(data){
+        setLocalMin(data.min)
+        setLocalMax(data.max)
+        setValues(data.min, data.max)
+    }
+
     return (
-        <div>
-        </div>
+        <form className='min-max' onSubmit={handleSubmit(onSubmit)}>
+            <input type='number' className='min' {...register("min")}/>
+            <input type='number' className='max' {...register("max")}/>
+            <input type='submit' value='Apply'/>
+        </form>
     )
 }

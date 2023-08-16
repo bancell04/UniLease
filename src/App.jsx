@@ -7,6 +7,7 @@ import SellPage from './Pages/sell'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import {QueryClient, QueryClientProvider} from '@tanstack/react-query'
 import { ApiContext } from './context'
+import { FilterProvider } from './UseContexts/FilterContext'
 
 function App() {
 
@@ -28,13 +29,15 @@ function App() {
         <QueryClientProvider client={client}>
           <Router>
             <Navbar />
-            <ApiContext.Provider value={[filters, setFilters]}>
-              <Routes>
-                  <Route path='/' element={<LandingPage />}/>
-                  <Route path='/rent' element={<ListingsPage />}/>
-                  <Route path='/sell' element={<SellPage />}/>
-              </Routes>
-            </ApiContext.Provider>
+            <FilterProvider>
+              <ApiContext.Provider value={[filters, setFilters]}>
+                <Routes>
+                    <Route path='/' element={<LandingPage />}/>
+                    <Route path='/rent' element={<ListingsPage />}/>
+                    <Route path='/sell' element={<SellPage />}/>
+                </Routes>
+              </ApiContext.Provider>
+            </FilterProvider>
           </Router>
         </QueryClientProvider>
       
