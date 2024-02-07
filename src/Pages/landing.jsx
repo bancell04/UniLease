@@ -10,16 +10,23 @@ export const LandingPage = () => {
     return (
         <div className="landing">
             <div className="landing-directory">
-                <Link 
-                    to='/rent' 
-                    className="directory-button" 
-                    onClick={() => {setFilters({...filters, school:'A&M'})}}
+                <Link
+                    to='/rent'
+                    className="directory-button"
+                    onClick={() => { setFilters({ ...filters, school: 'A&M' }) }}
                 >A&M
                 </Link>
-                <Link to='/rent' 
-                className="directory-button"
-                onClick={() => {setFilters({...filters, school:'Mines'})}}
-                >Mines</Link>
+                <Link to='/rent'
+                    className="directory-button"
+                    onClick={() => { setFilters({ ...filters, school: 'Mines' }) }}
+                >Mines
+                </Link>
+                <Link to='/rent'
+                    className="directory-button"
+                    onClick={() => { setFilters({ ...filters, school: 'Mines' }) }}
+                >Mines
+                </Link>
+
             </div>
         </div>
     )

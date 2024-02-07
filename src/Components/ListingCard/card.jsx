@@ -32,6 +32,9 @@ export const Card = (props) => {
                     <li>|</li>
                     <li><a>Contact</a></li>
                 </ul>
+                <button className='viewButton'>
+                    View
+                </button>
             </div>
         </div>
     )

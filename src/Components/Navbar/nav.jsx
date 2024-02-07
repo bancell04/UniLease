@@ -8,6 +8,7 @@ export default function Navbar() {
                 <Link to="/"><p className='logo'>Uni-Lease</p></Link>
                 <ul className="nav-list">
                     <li><Link to="/sell">List your space</Link></li>
+                    <li><Link to="/sell">Search</Link></li>
                 </ul>
             </div>
             <div className='right-container'>

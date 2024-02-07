@@ -1,65 +1,79 @@
-.card-container{
+.card-container {
     width: 21rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 0.8rem;
+    flex: 1 1 calc(25.333% - 20px);
+    margin: 10px;
+    color: rgb(55, 55, 55)
 }
-.img-container{
+
+.img-container {
     position: relative;
     width: 100%;
     height: 13.5rem;
     overflow: hidden;
+    background-color: rgb(0, 0, 0);
 }
-.img-picture{
+
+.img-picture {
     width: 100%;
-    border-radius: 0.8rem 0.8rem 0 0;
+    border-radius: 0.8rem 0.8rem 0.8 0.8;
 }
-.info-container{
+
+.info-container {
     position: relative;
     display: flex;
-    justify-content: top;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     width: 100%;
+    height: 100%;
     height: 11rem;
     background-color: rgb(255, 255, 255);
     border-radius: 0 0 0.8rem 0.8rem;
 }
-.info-title{
+
+.info-title {
     width: 86%;
     margin-block: 0;
     padding-top: 0.9rem;
     font-size: 1.1rem;
     font-weight: bold;
 }
-.info-list{
+
+.info-list {
     display: flex;
     flex-direction: row;
     margin-top: 0.7rem;
     margin-bottom: 0;
     height: fit-content;
 }
-.info-list li{
+
+.info-list li {
     display: flex;
     justify-content: center;
     color: rgb(55, 55, 55);
-    
+
     width: fit-content;
     padding-inline: 0.7rem;
     padding-block: 0.3rem;
     margin-inline: 0.4rem;
 
-    list-style-position:inside;
+    list-style-position: inside;
     border: 1px solid rgb(55, 55, 55);
     border-radius: 1rem;
 }
-.info-list li p{
+
+.info-list li p {
     margin: 0;
     font-size: 0.9rem;
 }
-.rent{
+
+.rent {
     font-weight: bold;
 }
-.address-line{
+
+.address-line {
     margin: 0;
     width: 85%;
     font-size: 0.9rem;
@@ -67,18 +81,22 @@
     display: flex;
     justify-content: space-between;
 }
-.address{
+
+.address {
     margin: 0;
 }
-.city-state{
+
+.city-state {
     margin: 0;
 }
-.phone-number{
+
+.phone-number {
     margin: 0;
     margin-top: 0.85rem;
 
 }
-.listing-details{
+
+.listing-details {
     display: flex;
     justify-content: center;
     height: fit-content;
@@ -86,10 +104,23 @@
     margin: 0;
     margin-top: 1rem;
 }
-.listing-details li{
+
+.listing-details li {
     width: fit-content;
     padding-inline: 0.8rem;
     margin-inline: 0.5rem;
     font-size: 0.8rem;
 }
 
+.viewButton {
+    width: 100%;
+    height: 3rem;
+    margin-top: 0.5rem;
+    background-color: rgb(15, 47, 47);
+    border: none;
+    border-radius: 0 0 0.8rem 0.8rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}

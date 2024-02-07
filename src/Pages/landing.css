@@ -1,29 +1,33 @@
-.landing{
-    background-color: rgb(242, 242, 242);
+.landing {
+    background-color: rgb(249, 249, 249);
     height: calc(100vh - 3.5rem);
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.landing-directory{
+
+.landing-directory {
     display: flex;
-    justify-content: center;
+    justify-content:flex-end;
     align-items: center;
     flex-direction: row;
-    height: 30rem;
-    width: 30rem;
-    border-radius: 50vh;
-    background-color: rgba(255, 255, 255, 0.571);
+    height: 50rem;
+    width: 50rem;
+    background-color: rgba(127, 91, 91, 0.571);
     position: absolute;
     top: 20vh;
 }
-.directory-button{
-    background-color: rgba(213, 223, 223, 0.404);
+
+.directory-button {
+    background-color: rgba(36, 177, 177, 0.404);
     width: 22%;
     padding: 4%;
     margin-block: 2%;
     margin-inline: 1rem;
     font-size: 1.2rem;
-    border-radius: 0.5rem;
+    font-family: 'Franklin Gothic Medium';
+    border-radius: 1.5rem;
+    border: 0.2rem solid;
+    border-color: black;
     text-align: center;
 }
