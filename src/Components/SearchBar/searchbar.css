@@ -1,0 +1,21 @@
+.search {
+    --padding: 14px;
+
+    width: max-content;
+    display: flex;
+    align-items: center;
+    border-radius: 28px;
+    background: #f6f6f6;
+    padding: var(--padding);
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+    font-family: "Lexend", sans-serif;
+    margin-left: var(--padding);
+    color: #333333;
+    width: 600px;
+}
