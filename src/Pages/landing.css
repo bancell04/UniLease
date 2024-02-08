@@ -1,33 +1,63 @@
 .landing {
-    background-color: rgb(249, 249, 249);
+    background-color: rgb(255, 255, 255);
     height: calc(100vh - 3.5rem);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .landing-directory {
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
     align-items: center;
     flex-direction: row;
     height: 50rem;
     width: 50rem;
-    background-color: rgba(127, 91, 91, 0.571);
+    background-color: rgba(255, 255, 255, 0.571);
     position: absolute;
     top: 20vh;
 }
 
 .directory-button {
-    background-color: rgba(36, 177, 177, 0.404);
+    background-color: rgb(159, 159, 159);
     width: 22%;
-    padding: 4%;
+    padding: 1%;
     margin-block: 2%;
     margin-inline: 1rem;
-    font-size: 1.2rem;
-    font-family: 'Franklin Gothic Medium';
+    font-size: 3rem;
+    font-family: 'Lexend', sans-serif;
     border-radius: 1.5rem;
-    border: 0.2rem solid;
+    border: 1px solid;
     border-color: black;
     text-align: center;
+}
+
+.searchContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 1000px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    background-image: url(https://www.coloradohomesmag.com/content/uploads/2022/08/a/n/unnamed2-scaled.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.motto {
+    color: rgb(255, 255, 255);
 }

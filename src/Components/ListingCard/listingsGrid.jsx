@@ -17,7 +17,7 @@ export const ListingsGrid = (props) => {
                         numBathrooms={entry.numBathrooms}
                         rent={entry.rent}
                         description={entry.description}
-                        address={"entry.address"} 
+                        address={"next to Brady's house" }
                         squareFootage={entry.squareFootage} 
                         phoneNumber={entry.phoneNumber} 
                         email={entry.email} 
